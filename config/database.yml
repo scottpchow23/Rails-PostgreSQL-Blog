@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: blogpostgresql_production
-  username: blogpostgresql
-  password: <%= ENV['BLOGPOSTGRESQL_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  # database: blogpostgresql_production
+  # username: blogpostgresql
+  # password: <%= ENV['BLOGPOSTGRESQL_DATABASE_PASSWORD'] %>
